@@ -7,3 +7,7 @@ As consistent with the rest of scikit-learn, I have used joblib to parallelize t
 
 Bumming seems to be recommended for noisy data sets.
 >“By perturbing the data, bumping tries to move the fitting procedure around to good areas of model space. For example, if a few data points are causing the procedure to find a poor solution, any bootstrap” (Elements of Statistical Learning” second edition, 291).
+
+Install
+-------
+>pip install git+https://github.com/pr38/socraticbumpsearch
