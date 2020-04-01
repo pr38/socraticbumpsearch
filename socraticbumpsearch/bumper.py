@@ -35,6 +35,8 @@ class BumperBase(MetaEstimatorMixin):
 
         self.best_estimator_ = best_model
         self.all_models_score_ = models_score_list
+        
+        return self
 
     def predict(self, X):
         self.check_is_fitted()
@@ -46,7 +48,7 @@ class BumperBase(MetaEstimatorMixin):
             raise NotFittedError("""
             Estimator is not fitted yet. Call 'fit' with appropriate arguments before using this estimator
             """)
-
+            
 
 
 
