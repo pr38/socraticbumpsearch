@@ -35,6 +35,7 @@ class BumperBase(MetaEstimatorMixin):
 
         self.best_estimator_ = best_model
         self.all_models_score_ = models_score_list
+        self.is_fitted = True
         
         return self
 
